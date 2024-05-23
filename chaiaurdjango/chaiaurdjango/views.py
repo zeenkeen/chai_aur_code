@@ -8,7 +8,8 @@ def home(request):
     #return HttpResponse("hello world. This is chai aur django home page")
     return render(request,'website/index.html')
 def about(request):
-    return HttpResponse("hello world. This is chai aur django about page")
+    #return HttpResponse("hello world. This is chai aur django about page")
+    return render(request, 'website/about.html')
 
 def contact(request):
-    return HttpResponse("hello world. This is chai aur django contact page")
+    return render(request, 'website/contact.html')
